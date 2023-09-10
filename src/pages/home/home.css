@@ -1,0 +1,34 @@
+/* Light mode styles */
+.home {
+  margin-top: 40px;
+}
+
+.homeContainer {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  justify-content: space-between;
+}
+
+/* Dark mode styles */
+.home.dark {
+  background-color: #202c37;
+  color: white;
+}
+
+.homeContainer.dark {
+  border: 1px solid white; /* Example dark mode style */
+}
+
+@media (max-width: 768px) {
+  .homeContainer {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    text-align: center;
+  }
+}
